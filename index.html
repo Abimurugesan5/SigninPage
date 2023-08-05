@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Metadata, title, stylesheets, and scripts go here -->
+    <title>Form Validation</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Create Account</h2>
+
+        </div>
+        <form id="form" class="form">
+            <div class="form-control">
+                <label for="username">UserName</label>
+                <input type="text" placeholder="Enter your name" id="username"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error message</small>
+
+            </div>
+            <div class="form-control">
+                <label for="email">Email </label>
+                <input type="email" placeholder="Enter email address" id="email"/>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Please enter a valid email.</small>
+            </div>
+            <div class="form-control">
+                <label for="username">Password</label>
+                <input type="password" placeholder="Enter password" id="password1"/>
+                <i class="fas fa-eye toggle-password eyeIcon"></i>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Your Password must be at least 8 characters long. It should contain both uppercase
+            </div>
+            <div class="form-control">
+                <label for="username">Password Check</label>
+                <input type="password" placeholder="Password check" id="password2"/>
+                <i class="fas fa-eye toggle-password eyeIcon"></i>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Check Password</small>
+            </div>
+            <div class="field btn">
+            <button type="submit" form="form" value="Submit Form">Sign Up!</button>
+        </div >
+            <script src="index.js"></script>
+        </form>
+
+    </div>
+    <!-- Content of the web page goes here -->
+</body>
+</html>
